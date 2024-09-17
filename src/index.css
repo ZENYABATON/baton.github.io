@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  --main-bg-image: url('./assets/DAY.png');
+  --main-part-image: url('./assets/overlay.png'),linear-gradient(180deg, rgba(132,155,59,1) 1%, rgba(250,194,194,1) 100%);
+  --sign-color: #876767;
+  --sign-hover-color: #685050;
+  --stars-path: url('./assets/stars.svg')
+}
+
+#headline {
+  background-image: var(--main-bg-image);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.aoboshi-one-regular {
+  font-family: "Aoboshi One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.text {
+  color: white;
+  font-family: "Archivo Black";
+  font-size: 1.2rem;
+  font-weight: semibold;
+}
