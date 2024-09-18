@@ -150,9 +150,6 @@
       <div  >
         <span class="sign"><a href ="#">Design by  Baton Banan</a></span>
       </div>
-      <div>
-        <span class="sign"><a href ="#">Frontend by  Harly Stesh</a></span>
-      </div>
     </div>
     <Footer class="mt-[2rem] pb-8"/>
     </div>

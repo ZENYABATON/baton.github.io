@@ -1,6 +1,8 @@
 <script setup>
   import Navbar from './components/Navbar.vue'
   import Footer from './components/Footer.vue'
+
+  const VITE_ENDPOINT = import.meta.env.VITE_ENDPOINT;
 </script>
 
 <template>
@@ -53,14 +55,14 @@
       
       <div>
         <div class="flex flex-row gap-2">
-            <img src="./assets/shop.jpg" class="object-cover"/>
+            <img :src="VITE_ENDPOINT+'shop.jpg'" class="object-cover"/>
             <div class="gap-2 flex flex-col w-[10rem]">
-              <div class="bg-[#D46868] w-[10rem] m-auto rounded-xl flex justify-center"><img src="./assets/arrow_up.svg" class="size-[1.5rem]"></div>
-              <img  src="./assets/4.jpg" />
-              <img  src="./assets/shop.jpg" />
-              <img  src="./assets/3.jpg" />
-              <img  src="./assets/2.jpg" />
-              <div class="bg-[#D46868] w-[10rem] m-auto rounded-xl flex justify-center"><img src="./assets/arrow_down.svg" class="size-[1.5rem]"></div>
+              <div class="bg-[#D46868] w-[10rem] m-auto rounded-xl flex justify-center"><img :src="VITE_ENDPOINT+'arrow_up.svg'" class="size-[1.5rem]"></div>
+              <img  :src="VITE_ENDPOINT+ '4.jpg'" />
+              <img  :src="VITE_ENDPOINT+ 'shop.jpg'" />
+              <img  :src="VITE_ENDPOINT+ '3.jpg'" />
+              <img  :src="VITE_ENDPOINT+ '2.jpg'" />
+              <div class="bg-[#D46868] w-[10rem] m-auto rounded-xl flex justify-center"><img :src="VITE_ENDPOINT+'arrow_down.svg'" class="size-[1.5rem]"></div>
 
             </div>
         </div>
